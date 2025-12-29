@@ -1,0 +1,38 @@
+/* Gaya Laporan (Warna Hijau Jadual) */
+.table-laporan thead th {
+    background-color: #2ecc71 !important; /* Warna hijau tepat seperti gambar */
+    color: white;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.btn-edit {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 5px 12px;
+    border-radius: 4px;
+}
+
+.btn-padam {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 12px;
+    border-radius: 4px;
+}
+
+/* Sesuai untuk cetakan (Print) */
+@media print {
+    .sidebar, .header, .filters-section, .action-buttons, .action-cell {
+        display: none !important;
+    }
+    .main-content {
+        margin-left: 0 !important;
+        width: 100% !important;
+        padding: 0 !important;
+    }
+    .students-table {
+        box-shadow: none !important;
+    }
+}
